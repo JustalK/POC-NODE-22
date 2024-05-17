@@ -1,0 +1,17 @@
+{
+  "name": "poc-node-22",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node --watch watched/index.js",
+    "glob": "node --watch glob/index.js",
+    "abort-signal": "node --watch abort-signal/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "volta": {
+    "node": "22.2.0"
+  }
+}
