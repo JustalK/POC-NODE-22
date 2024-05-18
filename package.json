@@ -7,6 +7,7 @@
     "watch": "node --watch watched/index.js",
     "glob": "node --watch glob/index.js",
     "abort-signal": "node --watch abort-signal/index.js",
+    "abort-signal-fetch": "node --watch abort-signal/fetch.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

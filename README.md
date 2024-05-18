@@ -34,4 +34,5 @@ $ npm run glob
 
 ## Link
 
+[Node 22](https://nodejs.org/en/blog/announcements/v22-release-announce#improve-performance-of-abortsignal-creation)
 [AbortSignal Explanation deep](https://openjsf.org/blog/using-abortsignal-in-node-js)
