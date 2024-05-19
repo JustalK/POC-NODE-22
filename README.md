@@ -10,6 +10,30 @@ $ node --run watch
 
 It will run the watch script located in the `package.json`.
 
+#### Stream default High Water Mark
+
+The high water mark is a parameter that sets a limit on the amount of data that can be stored in the internal stream buffer. When the limit is reached, Node stops reading more data until the buffer is emptied. This process is a security to limit the memory usage and prevent your application from crashing. This limit is a threshold, not a hard limit!
+
+This parameter is tricky. If set too low, the program might take a while to execute very long process requiring a log of information from a stream. If set too high, you might crash your application with a java heap limit exception.
+
+The default value of stream has been increased by default from 16kiB to 64KiB.
+
+In order to see this, just run the following command:
+
+```bash
+$ node --run highWaterMark
+```
+
+![2.png](./documentation/2.png)
+
+As you can see, it is way faster with the new high water mark limit but also consume obviously more memory.
+
+In order to see the problem that you might encountered, you can limit the max memory allocated to the heap by playwing with the `max_old_space_size`:
+
+```bash
+$ node --run highWaterMark-limited
+```
+
 #### Watch Mode
 
 Run the following command:

@@ -8,6 +8,8 @@
     "abort-signal-fetch": "node --watch abort-signal/fetch.js",
     "glob": "node --watch glob/index.js",
     "performance": "node performance/index.js",
+    "highWaterMark": "node highWaterMark/index.js",
+    "highWaterMark-limited": "node --max_old_space_size=1 highWaterMark/index.js",
     "watch": "node --watch watch/index.js",
     "websocket": "node --watch websocket/index.js"
   },
