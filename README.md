@@ -1,5 +1,34 @@
 # POC-NODE-22
 
+This project is a poc for testing the new feature of Node 22. The new version has been released in avril 2024 and will become the new LTS soon. In this project, I implemented ad put some clarity on the new features. In addition to what is under, we can also point the javascript version that has been upgraded to V8.
+
+## Plan of the presentation
+
+I explain with all the details how I build the project and my way of working.
+
+- Support require()ing synchronous ESM graphs
+- Running package.json scripts
+- Stream default High Water Mark
+- Watch Mode
+- Websocket Client
+- Glob/GlobSync
+- Improve performance of AbortSignal creation
+- Link
+
+#### Support require()ing synchronous ESM graphs
+
+You can now use module and mjs module using the "--experimental-require-module":
+
+![3.png](./documentation/3.png)
+
+![4.png](./documentation/4.png)
+
+Run the following command:
+
+```bash
+$ node --run module
+```
+
 #### Running package.json scripts
 
 No need to use the following command `npm run watch`, you can use node directly:

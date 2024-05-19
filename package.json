@@ -7,9 +7,10 @@
     "abort-signal": "node --watch abort-signal/index.js",
     "abort-signal-fetch": "node --watch abort-signal/fetch.js",
     "glob": "node --watch glob/index.js",
-    "performance": "node performance/index.js",
     "highWaterMark": "node highWaterMark/index.js",
     "highWaterMark-limited": "node --max_old_space_size=1 highWaterMark/index.js",
+    "module": "node --experimental-require-module module/index.js",
+    "performance": "node performance/index.js",
     "watch": "node --watch watch/index.js",
     "websocket": "node --watch websocket/index.js"
   },
@@ -19,6 +20,7 @@
     "node": "22.2.0"
   },
   "dependencies": {
-    "ws": "^8.17.0"
+    "ws": "^8.17.0",
+    "module-test": "file:./module/module"
   }
 }
